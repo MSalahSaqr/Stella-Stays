@@ -1,8 +1,8 @@
 import express from 'express';
-import { graphqlHTTP } from 'express-graphql'
-import * as dotenv from 'dotenv'
+import { graphqlHTTP } from 'express-graphql';
+import * as dotenv from 'dotenv';
 import { schema } from './graphql/schema.js';
-import { root } from './graphql/providers.js'
+import { root } from './graphql/providers.js';
 import db from './models/index.js';
 
 dotenv.config({ path: "./.env" })
