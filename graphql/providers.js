@@ -7,12 +7,12 @@ export const root = {
     return 'Hello world!';
   },
   createReservation: async ({ unitID, guestName, checkIn, checkOut }) => {
-    return await createReservation(unitID, guestName, checkIn, checkOut)
+    return await createReservation(unitID, guestName, checkIn, checkOut);
   },
   updateReservation: async ({ reservationID, unitID, guestName, checkIn, checkOut }) => {
-    return await updateReservation(reservationID, unitID, guestName, checkIn, checkOut)
+    return await updateReservation(reservationID, unitID, guestName, checkIn, checkOut);
   },
   cancelReservation: async ({ reservationID }) => {
-    await cancelReservation(reservationID)
+    await cancelReservation(reservationID);
   },
 };

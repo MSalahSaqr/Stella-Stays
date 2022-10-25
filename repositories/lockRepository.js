@@ -6,5 +6,5 @@ export async function getLockByUnitId(unitId) {
       unit_id: unitId
     },
     raw: true
-  })
+  });
 }

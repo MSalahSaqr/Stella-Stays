@@ -6,7 +6,7 @@ export async function createAccessCode(lockId, reservationId, passcode, remotePa
     reservation_id: reservationId,
     passcode: passcode,
     remote_passcode_id: remotePasscodeId
-  })
+  });
 }
 
 export async function getAccessCodeByReservationId(reservationId) {
@@ -15,7 +15,7 @@ export async function getAccessCodeByReservationId(reservationId) {
       reservation_id: reservationId
     },
     raw: true
-  })
+  });
 }
 export async function deleteAccessCodeByReservationId(reservationId) {
   await db.AccessCode.destroy({ where: { reservation_id: reservationId } });

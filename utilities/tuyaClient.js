@@ -167,8 +167,8 @@ function generateTokenSign(tokenSignInput) {
 }
 
 function generateBusinessSign(businessSignInput) {
-  const stringToSign = createStringToSign(businessSignInput.stringToSignInput)
-  const fullStringToSign = businessSignInput.clientId + businessSignInput.accessToken + businessSignInput.timestamp + businessSignInput.nonce + stringToSign
+  const stringToSign = createStringToSign(businessSignInput.stringToSignInput);
+  const fullStringToSign = businessSignInput.clientId + businessSignInput.accessToken + businessSignInput.timestamp + businessSignInput.nonce + stringToSign;
   const sign = crypto.createHmac("sha256", businessSignInput.secret).update(fullStringToSign).digest("hex").toUpperCase();
   return sign;
 }

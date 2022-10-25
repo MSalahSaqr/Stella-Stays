@@ -97,9 +97,9 @@ async function generatePassCode(reservationId, unitId) {
       codeObj = generateAccessCode(lock.remote_lock_id);
     } catch (error) {
       if (i == 2)
-        console.log(`[generateAccessCode] something went wrong, all retries faild!!`)
+        console.log(`[generateAccessCode] something went wrong, all retries faild!!`);
       else
-        console.log(`[generateAccessCode] something went wrong, retry No: ${i + 1}!!`)
+        console.log(`[generateAccessCode] something went wrong, retry No: ${i + 1}!!`);
     }
   }
 

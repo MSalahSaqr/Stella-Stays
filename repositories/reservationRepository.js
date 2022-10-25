@@ -65,9 +65,9 @@ export async function getReservationById(reservationId) {
       ]
     },
     raw: true
-  })
+  });
 
-  return result
+  return result;
 }
 
 export async function insertReservation(unitId, guestName, checkIn, checkOut) {
@@ -76,9 +76,9 @@ export async function insertReservation(unitId, guestName, checkIn, checkOut) {
     guest_name: guestName,
     check_in: checkIn,
     check_out: checkOut
-  })
+  });
 
-  return result.get({ plain: true })
+  return result.get({ plain: true });
 }
 
 export async function updateReservationAndRemoveKey(reservationId, unitId, guestName, checkIn, checkOut) {
