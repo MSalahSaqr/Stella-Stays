@@ -4,7 +4,7 @@ import Reservation from './Reservation.js';
 import Lock from './Lock.js';
 import AccessCode from './AccessCode.js';
 
-const sequelize = new Sequelize('://postgres:6556@localhost:5432/StellaStayTask');
+const sequelize = new Sequelize('postgres://postgres:6556@localhost:5432/StellaStayTask');
 
 const unit = Unit(sequelize);
 const reservation = Reservation(sequelize);

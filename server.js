@@ -7,7 +7,7 @@ import db from './models/index.js';
 
 dotenv.config({ path: "./.env" })
 
-db.sequelize.authenticate()
+await db.sequelize.authenticate()
   .then(() => {
     console.log("Connection to database successfull");
   })
